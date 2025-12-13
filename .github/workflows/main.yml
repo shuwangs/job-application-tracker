@@ -1,0 +1,47 @@
+            - name: Add To GitHub projects
+  uses: actions/add-to-project@v1.0.2
+  with:
+    # URL of the project to add issues to
+    project-url: 
+    # A GitHub personal access token with write access to the project
+    github-token: 
+    # A comma-separated list of labels to use as a filter for issue to be added
+    labeled: # optional
+    # The behavior of the labels filter, AND to match all labels, OR to match any label, NOT to exclude any listed label (default is OR)
+    label-operator: # optional
+
+                      - name: ghtag
+  # You may pin to the exact commit or the version.
+  # uses: norwd/ghtag@3f6be5271729c5845596e72addc66b5e5b977ac4
+  uses: norwd/ghtag@v0.1.0-beta
+  with:
+    # Used to authenticate with GitHub, this should be a PAT with `repo: write` permissions.
+    token: # optional
+    # Who the tag should be attributed to, defaults to the GitHub Actions bot.
+    username: # optional
+    # Who the tag should be attributed to, defaults to the GitHub Actions bot.
+    email: # optional
+    # The tag to create or update, e.g. `v1.2.3`.
+    tag: 
+    # An optional message to annotate the tag with.
+    message: # optional
+    # Which git object to tag, defaults to `GITHUB_REF`.
+    ref: # optional
+
+                - name: wipac-dev-project-action
+  # You may pin to the exact commit or the version.
+  # uses: WIPACrepo/wipac-dev-project-action@d8636a2c0b4321ca5e3bb37d4c3eaeeb7df01775
+  uses: WIPACrepo/wipac-dev-project-action@v1.0
+  with:
+    # a PAT with project write permissions
+    github_token: # default is 
+    # the organization of the project
+    organization: # default is 
+    # the id of the project (see url)
+    project_number: # default is 
+             - name: PR Status Labeller
+  # You may pin to the exact commit or the version.
+  # uses: comnoco/pr-status-labeller@70ad3c3f59ab3983ef8d8daefbd9578a23a65ca7
+  uses: comnoco/pr-status-labeller@v1
+          
+          
