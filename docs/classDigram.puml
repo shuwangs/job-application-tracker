@@ -1,0 +1,82 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam backgroundColor white
+skinparam handwritten false
+skinparam packageStyle rectangle
+
+class JobEntity {
+  +id : number
+  +title : string
+  +status : string
+  +salary : string
+}
+
+package "Frontend (React)" {
+  class "App.js" as App {
+    -jobs : JobEntity[]
+    +handleFetch() : void
+    +handleSubmit() : void
+  }
+
+  class "JobList.js" as JobList {
+    +props.jobs : JobEntity[]
+  }
+
+  class "JobItem.js" as JobItem {
+    +props.job : JobEntity
+    +onDelete() : void
+    +onUpdate() : void
+  }
+}
+
+package "API Layer" {
+  class "jobsApi.js" as API {
+    +fetchJobs() : Promise<JobEntity[]>
+    +postJob(data) : Promise<JobEntity>
+    +removeJob(id) : Promise<void>
+    +patchJob(id, data) : Promise<JobEntity>
+  }
+}
+
+package "Backend (Node/Express)" {
+  class "index.js" as Server {
+    +app : Express
+    +use(middleware)
+    +use('/api/jobs', JobsRouter)
+  }
+
+  class "routes/jobsRoutes.js" as JobsRouter {
+    +GET /
+    +POST /
+    +DELETE /:id
+    +PATCH /:id
+  }
+
+  class "controllers/jobsController.js" as JobsController {
+    -db : DB
+    +getJobs(req,res)
+    +createJob(req,res)
+    +deleteJob(req,res)
+    +updateJob(req,res)
+  }
+
+    class "db.js" as DB {
+    +pool : Pool
+    +query(sql, params) : Promise
+  }
+}
+
+' -------------------- relationships --------------------
+App *-- JobList
+JobList *-- JobItem
+
+App ..> API
+JobItem ..> API
+API ==> Server : HTTP JSON
+
+Server ..> JobsRouter : mounts
+JobsRouter ..> JobsController : calls
+JobsController ..> DB : SQL query()
+JobsController ..> JobEntity : returns JSON
+
+@enduml
