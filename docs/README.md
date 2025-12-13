@@ -1,10 +1,32 @@
-# Project Title
+# Job Application Tracker 
 
-Simple overview of use/purpose.
+Overview
+
+We have created a  Job Application Tracker app which is a productivity tool designed to help job seekers organize, monitor, and manage their job search in one central place. Instead of relying on spreadsheets, emails, or memory, the app provides a structured system to track applications from initial submission through interviews and final outcomes.
+
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Purpose
+
+The primary purpose of the app is to simplify and streamline the job search process by:
+
+Centralizing information – Store job details such as company name, role, application date, status, contacts, and links in one location.
+
+Tracking progress – Monitor each application’s stage (applied, interview, offer, rejected, follow-up needed).
+
+Improving organization – Reduce missed deadlines, forgotten follow-ups, and duplicated applications.
+
+Supporting decision-making – Compare roles, companies, and offers more easily.
+
+Reducing stress – Provide clarity and control during an often overwhelming job search.
+
+Intended Users
+
+Students and recent graduates
+
+Active job seekers
+
 
 ## Getting Started
 
