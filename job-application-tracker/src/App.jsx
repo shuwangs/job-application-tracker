@@ -1,4 +1,7 @@
-import React from 'react';
+import "./App.css";
+import React from "react";
+import LogIn from "./components/LogIn.jsx";
+import { Dashboard } from "./components/Dashboard.jsx";
 import { Routes, Route, Navigate } from "react-router-dom";
 import LogIn from "./components/LogIn"; 
 import SignUp from "./components/SignUp";
@@ -19,4 +22,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
