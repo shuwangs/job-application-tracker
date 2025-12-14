@@ -1,6 +1,6 @@
 // models/test.js
 // Import the database
-const db = require('../db/config');
+const db = require('../config/config');
 // Instantiate a new object.
 // This will interface with the quotes-app database.
 // Specifically, the quotes table.
