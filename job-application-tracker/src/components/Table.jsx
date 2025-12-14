@@ -1,6 +1,7 @@
 import React from "react";
 import "./Table.css";
 
-export const Table = () => {
+const Table = () => {
   return <div>Table</div>;
 };
+export default Table;
