@@ -3,16 +3,23 @@ import React from "react";
 import LogIn from "./components/LogIn.jsx";
 import { Dashboard } from "./components/Dashboard.jsx";
 import { Routes, Route, Navigate } from "react-router-dom";
+import LogIn from "./components/LogIn"; 
+import SignUp from "./components/SignUp";
+import Table from "./components/Table";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/login" element={<LogIn />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-      </Routes>
-    </div>
+     <Routes>
+      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/login" element={<LogIn />} />
+      <Route path = "/signup" element = {<SignUp />} />
+      <Route path="/dashboard" element={<Table />} />
+      
+      {/*       
+      <div className="App">
+        <Table />
+      </div> */}
+    </Routes>
   );
 }
 
