@@ -1,11 +1,15 @@
 import "./App.css";
 import { Table } from "./components/Table";
+// Import BrowserRouter
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Table />
-    </div>
+    <Router>
+      <div className="App">
+        <Table />
+      </div>
+    </Router>
   );
 }
 export default App;
