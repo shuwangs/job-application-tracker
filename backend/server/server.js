@@ -10,7 +10,7 @@ app.use(express.static('public'));
 // API Routes
 app.use('/api/test', require('../routes/test-routes'));
 app.get('/*path', (req, res) => {
-  res.sendFile(path.join(__dirname + '/index.html'))
+  res.sendFile(path.join(__dirname + './index.html'))
 });
 app.listen(PORT, () => {
   console.log(`App is up and running. Listening on port ${PORT}`);

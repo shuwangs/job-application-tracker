@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "vite-plugin-csp-guard": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.2.7"
   }
 }
