@@ -35,16 +35,40 @@ Reducing stress – Provide clarity and control during an often overwhelming job
 
 ### Installing
 
-- How/where to download your program
-- Any modifications needed to be made to files/folders
+```
+git clone https://github.com/shuwangs/job-application-tracker.git
+```
+
+- Go to the project directory and
+
+```
+cd job-application-tracker
+```
+
+- Install project dependencies
+
+```
+npm install
+```
 
 ### Executing program
 
-- How to run the program
-- Step-by-step bullets
+- To run the frontend, go to the frontend directory
 
 ```
-code blocks for commands
+cd job-application-tracker
+```
+
+and start the frontend server
+
+```
+npm run dev
+```
+
+- To start the backend server
+
+```
+NEEDS TO BE FILLED HERE
 ```
 
 ## Help
@@ -59,8 +83,14 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Kacie Dearman
+ex. (https://www.linkedin.com/in/deardevdesigner/)
+ex. Shu Wang
+ex. (https://www.linkedin.com/in/shuuwang/)
+ex. Paige Li
+ex. (https://www.linkedin.com/in/itspaigenli/)
+ex. Violetta Krotova
+ex. (https://www.linkedin.com/in/violettakrotova/)
 
 ## Version History
 
@@ -72,14 +102,15 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the TECHTONICA License
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- [Make an Editable Table in React](https://www.youtube.com/watch?v=MINQoCSBmds)
+- [React Interactivity](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_interactivity_events_state)
+- [React Forms](https://www.w3schools.com/REACT/react_forms.asp)
+- [Navigation: navigate() method](https://developer.mozilla.org/en-US/docs/Web/API/Navigation/navigate)
+- [React Router](https://www.w3schools.com/react/react_router.asp)
+- [Handling Modals](https://dev.to/codewithmahadihasan/comprehensive-guide-to-handling-modals-in-react-46je)
