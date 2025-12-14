@@ -5,13 +5,15 @@
 .table {
   display: block;
   overflow: hidden;
-  table-layout: auto;
+  table-layout: fixed;
   border-collapse: collapse;
   box-shadow: 0px 10px 10px #ccc;
   border-radius: 10px;
   white-space: nowrap;
-  width: 100%;
+  width: 100em;
+  max-width: 80%;
   margin: auto;
+  table-layout: auto;
   overflow-x: auto;
 }
 
@@ -35,11 +37,26 @@
   background-color: #eee;
 }
 
-.input3 {
+.expand {
+  width: 100%;
+}
+
+.label {
   border-radius: 3px;
-  padding: 0.33rem;
+  padding: 0.3rem;
   color: white;
+}
+
+.label-draft {
   background-color: #777;
+}
+
+.label-live {
+  background-color: #42a942;
+}
+
+.label-error {
+  background-color: #d9534f;
 }
 
 .actions {
