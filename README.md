@@ -35,16 +35,40 @@ Reducing stress – Provide clarity and control during an often overwhelming job
 
 ### Installing
 
-- How/where to download your program
-- Any modifications needed to be made to files/folders
+```
+git clone https://github.com/shuwangs/job-application-tracker.git
+```
+
+- Go to the project directory and
+
+```
+cd job-application-tracker
+```
+
+- Install project dependencies
+
+```
+npm install
+```
 
 ### Executing program
 
-- How to run the program
-- Step-by-step bullets
+- To run the frontend, go to the frontend directory
 
 ```
-code blocks for commands
+cd job-application-tracker
+```
+
+and start the frontend server
+
+```
+npm run dev
+```
+
+- To start the backend server
+
+```
+NEEDS TO BE FILLED HERE
 ```
 
 ## Help
@@ -59,7 +83,13 @@ command to run if program contains helper info
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
+ex. Kacie Dearman
+ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Shu Wang
+ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. Paige Li
+ex. (https://www.linkedin.com/in/itspaigenli/)
+ex. Violetta Krotova
 ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## Version History
@@ -72,13 +102,13 @@ ex. [@DomPizzie](https://twitter.com/dompizzie)
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the TECHTONICA License
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 
-- [awesome-readme](https://github.com/matiassingers/awesome-readme)
+- [Make an Editable Table in React](https://www.youtube.com/watch?v=MINQoCSBmds)
 - [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 - [dbader](https://github.com/dbader/readme-template)
 - [zenorocha](https://gist.github.com/zenorocha/4526327)
