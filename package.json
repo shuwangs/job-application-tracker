@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "directories": {
     "doc": "docs"
   },
@@ -17,7 +17,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/shuwangs/job-application-tracker/issues"
   },
@@ -30,5 +29,8 @@
     "pg": "^8.16.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "vite": "^7.2.7"
   }
 }
