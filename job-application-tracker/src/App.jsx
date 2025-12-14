@@ -1,15 +1,20 @@
-import "./App.css";
-import { Table } from "./components/Table";
-// Import BrowserRouter
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React from 'react';
+import { Routes, Route, Navigate } from "react-router-dom";
+import LogIn from "./components/LogIn.jsx"; 
+import Table from "./components/Table";
 
 function App() {
   return (
-    <Router>
+     <Routes>
+      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/login" element={<LogIn />} />
+      <Route path="/dashboard" element={<Table />} />
+      
+      {/*       
       <div className="App">
         <Table />
-      </div>
-    </Router>
+      </div> */}
+    </Routes>
   );
 }
 export default App;
