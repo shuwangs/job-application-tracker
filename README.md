@@ -84,13 +84,13 @@ command to run if program contains helper info
 Contributors names and contact info
 
 ex. Kacie Dearman
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. (https://www.linkedin.com/in/deardevdesigner/)
 ex. Shu Wang
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. (https://www.linkedin.com/in/shuuwang/)
 ex. Paige Li
 ex. (https://www.linkedin.com/in/itspaigenli/)
 ex. Violetta Krotova
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+ex. (https://www.linkedin.com/in/violettakrotova/)
 
 ## Version History
 
