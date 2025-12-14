@@ -17,3 +17,8 @@
   background-color: white;
   width: 25em;
 }
+
+.modal .btn {
+  display: block;
+  margin: auto;
+}
