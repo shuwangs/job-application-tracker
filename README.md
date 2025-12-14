@@ -118,4 +118,4 @@ Inspiration, code snippets, etc.
 Visual Representation:
 
 
-Link to presentation:
+Link to presentation: [Job Application Tracker Presentation](https://www.example.com/)
