@@ -11,7 +11,7 @@ export const Table = ({ rows, deleteRow, editRow }) => {
         <thead>
           <tr>
             <th>Company</th>
-            <th>Job Title</th>
+            <th>Position</th>
             <th>Description</th>
             <th>Date Applied</th>
             <th>Status</th>
@@ -26,7 +26,7 @@ export const Table = ({ rows, deleteRow, editRow }) => {
             return (
               <tr key={idx}>
                 <td>{row.company}</td>
-                <td>{row.jobTitle}</td>
+                <td>{row.position}</td>
                 <td>{row.description}</td>
                 <td>{row.dateApplied}</td>
                 <td>{row.status}</td>
