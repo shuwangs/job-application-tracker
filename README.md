@@ -109,7 +109,7 @@ This project is licensed under the TECHTONICA License
 Inspiration, code snippets, etc.
 
 - [Make an Editable Table in React](https://www.youtube.com/watch?v=MINQoCSBmds)
-- [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- [dbader](https://github.com/dbader/readme-template)
+- [React Interactivity](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_interactivity_events_state)
+- [React Forms](https://www.w3schools.com/REACT/react_forms.asp)
 - [zenorocha](https://gist.github.com/zenorocha/4526327)
 - [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
