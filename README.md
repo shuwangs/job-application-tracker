@@ -111,5 +111,6 @@ Inspiration, code snippets, etc.
 - [Make an Editable Table in React](https://www.youtube.com/watch?v=MINQoCSBmds)
 - [React Interactivity](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Frameworks_libraries/React_interactivity_events_state)
 - [React Forms](https://www.w3schools.com/REACT/react_forms.asp)
-- [zenorocha](https://gist.github.com/zenorocha/4526327)
-- [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+- [Navigation: navigate() method](https://developer.mozilla.org/en-US/docs/Web/API/Navigation/navigate)
+- [React Router](https://www.w3schools.com/react/react_router.asp)
+- [Handling Modals](https://dev.to/codewithmahadihasan/comprehensive-guide-to-handling-modals-in-react-46je)
