@@ -115,7 +115,9 @@ Inspiration, code snippets, etc.
 - [React Router](https://www.w3schools.com/react/react_router.asp)
 - [Handling Modals](https://dev.to/codewithmahadihasan/comprehensive-guide-to-handling-modals-in-react-46je)
 
-Visual Representation:
+## Visual Representation:
+![A description of the image](diagram.png)
 
 
-Link to presentation: [Job Application Tracker Presentation](https://www.example.com/)
+## Link to presentation: 
+[Job Application Tracker Presentation](https://www.example.com/)
