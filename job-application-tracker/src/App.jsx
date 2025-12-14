@@ -1,25 +1,30 @@
 import "./App.css";
-import React from "react";
-import LogIn from "./components/LogIn.jsx";
+import React,{useState} from "react";
 import { Dashboard } from "./components/Dashboard.jsx";
-import { Routes, Route, Navigate } from "react-router-dom";
-import LogIn from "./components/LogIn"; 
-import SignUp from "./components/SignUp";
-import Table from "./components/Table";
+import { Routes, Route, Navigate, useNavigate } from "react-router-dom";
+import LogIn from "./components/LogIn.jsx"; 
+import SignUp from "./components/SignUp.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 function App() {
-  return (
-     <Routes>
-      <Route path="/" element={<Navigate to="/login" />} />
-      <Route path="/login" element={<LogIn />} />
-      <Route path = "/signup" element = {<SignUp />} />
-      <Route path="/dashboard" element={<Table />} />
-      
-      {/*       
-      <div className="App">
-        <Table />
-      </div> */}
-    </Routes>
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    navigate("/login");
+  };
+  
+  return (  
+    <div className="App">
+      <Navbar isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<LogIn setIsLoggedIn={setIsLoggedIn}/>} />
+        <Route path = "/signup" element = {<SignUp />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </div>
   );
 }
 
