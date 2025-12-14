@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
 import './LogIn.css';
-const LogIn = () => {
+const LogIn = ({ setIsLoggedIn }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
@@ -21,6 +21,7 @@ const LogIn = () => {
 
       if (response.ok) {
         localStorage.setItem('token', data.token); 
+        setIsLoggedIn(true);
         navigate('/dashboard');
       } else {
         alert('Login failed: ' + (data.message || 'Unknown error'));
@@ -29,8 +30,8 @@ const LogIn = () => {
       console.error('Network error:', error);
       alert('Network error, please try again.');
     }
+    
   };
-
   
   return (
    <div className="login-container">
@@ -64,6 +65,15 @@ const LogIn = () => {
           <button type="submit" className="login-button">
             Log In
           </button>
+
+          <div className="signup-link-container">
+            Don't have an account?{' '}
+            <Link to="/signup" className="signup-link">
+              Create New Account
+            </Link>
+          
+          </div>
+
         </form>
     </div>
     </div>
