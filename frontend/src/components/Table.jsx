@@ -1,7 +1,6 @@
-import { useState } from "react";
+import React from "react";
+import ".Table.css";
 
-export default function JobTrackerTable() {
-    return (
-        
-    )
-}
+export const Table = () => {
+  return <div>Table</div>;
+};
