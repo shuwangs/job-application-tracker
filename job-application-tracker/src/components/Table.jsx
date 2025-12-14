@@ -50,3 +50,5 @@ export const Table = ({ rows, deleteRow, editRow }) => {
     </div>
   );
 };
+
+export default Table;
