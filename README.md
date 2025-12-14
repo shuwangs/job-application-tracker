@@ -120,4 +120,4 @@ Inspiration, code snippets, etc.
 
 
 ## Link to presentation: 
-[Job Application Tracker Presentation](https://www.example.com/)
+[Job Application Tracker Presentation](https://docs.google.com/presentation/d/1QG3RgN0a_Xu_XShsVFX7FlANEcJyzchSv5lygE-BBUA/edit?usp=sharing)
