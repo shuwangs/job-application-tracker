@@ -54,3 +54,22 @@
 .login-button:hover {
     background-color: #0056b3;
 }
+
+.signup-link-container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}

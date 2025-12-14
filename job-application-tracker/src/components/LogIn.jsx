@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link} from 'react-router-dom';
 import './LogIn.css';
 const LogIn = () => {
   const [username, setUsername] = useState('');
@@ -64,6 +64,15 @@ const LogIn = () => {
           <button type="submit" className="login-button">
             Log In
           </button>
+
+          <div className="signup-link-container">
+            Don't have an account?{' '}
+            <Link to="/signup" className="signup-link">
+              Create New Account
+            </Link>
+          
+          </div>
+
         </form>
     </div>
     </div>
