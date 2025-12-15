@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "teamBlue",
+    "password": "jobApps1234",
+    "database": "jobApps",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "teamBlue",
+    "password": "jobApps1234",
+    "database": "jobApps",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "teamBlue",
+    "password": "jobApps1234",
+    "database": "jobApps",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

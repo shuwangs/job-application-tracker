@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
-import db from "./app/models.js";
-import jobAppsRoutes from "./app/routes/jobApps.routes.js";
+import db from "./models/jobAppsm.model.js";
+import jobAppsRoutes from "./routes/jobApps.routes.js";
  
 const app = express();
  
